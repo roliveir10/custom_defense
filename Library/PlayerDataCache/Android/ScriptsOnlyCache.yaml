@@ -9,7 +9,6 @@ ScriptsOnlyBuild:
     - Panning_zooming
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -73,25 +72,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 12178}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 11784}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12700}
+      Script: {instanceID: 12460}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 12740}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12800}
+      Script: {instanceID: 12742}
+    - Class: 114
+      Script: {instanceID: 12802}
     - Class: 114
       Script: {instanceID: 13092}
-    - Class: 114
-      Script: {instanceID: 17998}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,6 +198,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Game_manager
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -239,6 +244,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MapDiscover
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -335,12 +346,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Game_manager
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -563,13 +568,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MapDiscover
   platform: 13
   scenePathNames:
   - Assets/scenes/scene_1.unity
-  playerPath: /Users/robinoliveira/Custom Defense/custom_android.apk
+  playerPath: /Users/robinoliveira/Desktop/Custom_defense/android.apk

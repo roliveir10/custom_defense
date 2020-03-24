@@ -16,7 +16,7 @@ public class MapDiscover : MonoBehaviour
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		Vector3Int mouseCellPosition = Map_manager.instance.grid.WorldToCell(mousePosition);
         Vector3Int posTouched = Map_manager.instance.grid.WorldToCell(transform.position);
-		if (posTouched == mouseCellPosition)
+		if (Mathf.Abs(posTouched.x - mouseCellPosition.x) < 2 && Mathf.Abs(posTouched.y - mouseCellPosition.y) < 2)
 			if (Map_manager.instance.IsOnTheMap(posTouched) && Map_manager.instance.terrain_map[posTouched.x, posTouched.y].DiscoverButton)
 				DiscoverPressed(posTouched);
 			else

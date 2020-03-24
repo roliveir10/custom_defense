@@ -30,24 +30,27 @@ public class Panning_zooming : MonoBehaviour
             touch_start = Camera.main.ScreenToWorldPoint(Input.GetTouch(1).position);
         else if (Input.touchCount == 2 && (Input.GetTouch(1).phase == TouchPhase.Ended || Input.GetTouch(1).phase == TouchPhase.Canceled))
             touch_start = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-        else if (Input.touchCount > 1)
+        else if (Input.touchCount == 2)
         {
             Touch touch_zero = Input.GetTouch(0);
             Touch touch_one = Input.GetTouch(1);
 
-            Vector2 touch_zero_prev_pos = touch_zero.position - touch_zero.deltaPosition;
-            Vector2 touch_one_prev_pos = touch_one.position - touch_one.deltaPosition;
+            if (touch_zero.phase == TouchPhase.Moved && touch_one.phase == TouchPhase.Moved)
+            {
+                Vector2 touch_zero_prev_pos = touch_zero.position - touch_zero.deltaPosition;
+                Vector2 touch_one_prev_pos = touch_one.position - touch_one.deltaPosition;
 
-            float prev_magnitude = (touch_zero_prev_pos - touch_one_prev_pos).magnitude;
-            float current_magnitude = (touch_zero.position - touch_one.position).magnitude;
+                float prev_magnitude = (touch_zero_prev_pos - touch_one_prev_pos).magnitude;
+                float current_magnitude = (touch_zero.position - touch_one.position).magnitude;
 
-            float difference = current_magnitude - prev_magnitude;
+                float difference = current_magnitude - prev_magnitude;
 
-            if (difference > 0)
-                difference = 1;
-            else if (difference < 0)
-                difference = -1;
-            Zoom(Camera.main.ScreenToWorldPoint((touch_zero.position + touch_one.position) / 2), difference * 0.2f);
+                if (difference > 0)
+                    difference = 1;
+                else if (difference < 0)
+                    difference = -1;
+                Zoom(Camera.main.ScreenToWorldPoint((touch_zero.position + touch_one.position) / 2), difference * 0.6f);
+            }
         }
         else if (Input.GetMouseButton(0))
         {
