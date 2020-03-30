@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{8879487E-55B1-FE94-3560-FF91D96A3FDA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MapDiscover.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameFuncs.cs">
     <Files>
-      <File FileName="Assets/Scripts/Panning_zooming.cs" Line="61" Column="29" />
-      <File FileName="Assets/Scripts/Map_manager.cs" Line="193" Column="6" />
-      <File FileName="Assets/Scripts/MapDiscover.cs" Line="19" Column="38" />
+      <File FileName="Assets/Scripts/Map/Discover.cs" Line="75" Column="4" />
+      <File FileName="Assets/Scripts/Manager/MapManager.cs" Line="102" Column="15" />
+      <File FileName="Assets/Scripts/Map/DiscoverButton.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/GameFuncs.cs" Line="17" Column="94" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,13 @@
           <Node name="Custom_defense" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MapDiscover.cs" selected="True" />
+                <Node name="Buildings" expanded="True" />
+                <Node name="Interface" expanded="True" />
+                <Node name="Manager" expanded="True" />
+                <Node name="Map" expanded="True" />
+                <Node name="Other" expanded="True" />
+                <Node name="UI" expanded="True" />
+                <Node name="GameFuncs.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1832757d-4ba9-46db-b270-e4c811f726fb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7c66c1a6-65ac-437d-a521-2e979a60a810" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

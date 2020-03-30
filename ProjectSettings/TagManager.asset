@@ -44,6 +44,12 @@ TagManager:
   - name: background
     uniqueID: 3877088217
     locked: 0
-  - name: foreground
+  - name: item
     uniqueID: 3653113543
+    locked: 0
+  - name: buildingArea
+    uniqueID: 338309413
+    locked: 0
+  - name: UI
+    uniqueID: 3581137355
     locked: 0

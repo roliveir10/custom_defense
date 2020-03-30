@@ -63,14 +63,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Count.cs" />
-    <Compile Include="Assets\Scripts\Game_manager.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Building.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Mill.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Tower.cs" />
+    <Compile Include="Assets\Scripts\GameConsts.cs" />
+    <Compile Include="Assets\Scripts\GameFuncs.cs" />
+    <Compile Include="Assets\Scripts\GameStats.cs" />
+    <Compile Include="Assets\Scripts\Interface\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\Interface\IPlaceable.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
-    <Compile Include="Assets\Scripts\MapDiscover.cs" />
-    <Compile Include="Assets\Scripts\MapTile.cs" />
-    <Compile Include="Assets\Scripts\Map_manager.cs" />
-    <Compile Include="Assets\Scripts\PanelOpener.cs" />
+    <Compile Include="Assets\Scripts\Manager\MapManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Map\Discover.cs" />
+    <Compile Include="Assets\Scripts\Map\DiscoverButton.cs" />
+    <Compile Include="Assets\Scripts\Map\MapTile.cs" />
+    <Compile Include="Assets\Scripts\Other\BaseStats.cs" />
+    <Compile Include="Assets\Scripts\Other\Count.cs" />
     <Compile Include="Assets\Scripts\Panning_zooming.cs" />
+    <Compile Include="Assets\Scripts\UI\AcceptBuild.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSlot.cs" />
+    <Compile Include="Assets\Scripts\UI\PanelOpener.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/robinoliveira/Desktop/Custom_defense/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

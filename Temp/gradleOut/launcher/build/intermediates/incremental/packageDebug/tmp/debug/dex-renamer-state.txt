@@ -1,4 +1,0 @@
-#Tue Mar 24 15:54:49 CET 2020
-base.0=/Users/robinoliveira/Desktop/Custom_defense/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
