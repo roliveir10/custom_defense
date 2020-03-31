@@ -20,7 +20,6 @@ public class Discover : MonoBehaviour
 		BoundsInt closeArea = new BoundsInt(-1, -1, 0, 3, 3, 1);
 
 		TileToDiscoverByRecursive(tilesToDiscover, cellPos, Random.Range(discoverZone.Min, discoverZone.Max + 1));
-		//		Debug.Log(tilesToDiscover.Count);
 		for (int i = 0; i < tilesToDiscover.Count; i++)
 		{
 			foreach (var b in closeArea.allPositionsWithin)
@@ -36,7 +35,7 @@ public class Discover : MonoBehaviour
 		Vector3Int randomTile;
 
 		MapManager.Terrain[pos.x, pos.y].Discover = true;
-		if (count == 0)
+		if (list.Count >= count)
 			return 1;
 		neighb.Clear();
 		foreach (var b in closeArea.allPositionsWithin)
@@ -51,7 +50,7 @@ public class Discover : MonoBehaviour
 			randomTile = neighb[Random.Range(0, neighb.Count)];
 			neighb.Remove(randomTile);
 			list.Add(randomTile);
-			if (TileToDiscoverByRecursive(list, randomTile, count - 1) == 1)
+			if (TileToDiscoverByRecursive(list, randomTile, count) == 1)
 				return 1;
 		}
 		return 0;
@@ -77,9 +76,7 @@ public class Discover : MonoBehaviour
 		while (tileList.Count > 0)
 		{
 			isolateTile.Clear();
-			int a = CountDiscoverTile(isolateTile, tileList, tileList[0], tileTab);
-			Debug.Log(a);
-			if (a < isolateMax)
+			if (CountDiscoverTile(isolateTile, tileList, tileList[0], tileTab) < isolateMax)
 			{
 				for (int i = 0; i < isolateTile.Count; i++)
 					RemoveDiscoverTile(isolateTile[i].x, isolateTile[i].y);
@@ -96,7 +93,7 @@ public class Discover : MonoBehaviour
 
     private int CountDiscoverTile(List<Vector3Int> isolateTile, List<Vector3Int> tileList, Vector3Int currTile, Vector3Int[,] tileTab)
     {
-		BoundsInt area = new BoundsInt(0, 0, 0, 2, 2, 1);
+		BoundsInt area = new BoundsInt(-1, -1, 0, 3, 3, 1);
 		foreach (var b in area.allPositionsWithin)
         {
 			Vector3Int tile = new Vector3Int(currTile.x + b.x, currTile.y + b.y, 0);

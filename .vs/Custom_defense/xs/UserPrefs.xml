@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{8879487E-55B1-FE94-3560-FF91D96A3FDA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameFuncs.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Map/Discover.cs">
     <Files>
-      <File FileName="Assets/Scripts/Map/Discover.cs" Line="75" Column="4" />
-      <File FileName="Assets/Scripts/Manager/MapManager.cs" Line="102" Column="15" />
-      <File FileName="Assets/Scripts/Map/DiscoverButton.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/GameFuncs.cs" Line="17" Column="94" />
+      <File FileName="Assets/Scripts/Map/Discover.cs" Line="126" Column="2" />
+      <File FileName="Assets/Scripts/Manager/MapManager.cs" />
+      <File FileName="Assets/Scripts/Map/DiscoverButton.cs" />
+      <File FileName="Assets/Scripts/GameFuncs.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,10 +15,11 @@
                 <Node name="Buildings" expanded="True" />
                 <Node name="Interface" expanded="True" />
                 <Node name="Manager" expanded="True" />
-                <Node name="Map" expanded="True" />
+                <Node name="Map" expanded="True">
+                  <Node name="Discover.cs" selected="True" />
+                </Node>
                 <Node name="Other" expanded="True" />
                 <Node name="UI" expanded="True" />
-                <Node name="GameFuncs.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7c66c1a6-65ac-437d-a521-2e979a60a810" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4a5205d3-c0ab-45b6-9013-6d85730a7b58" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

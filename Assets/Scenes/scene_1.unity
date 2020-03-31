@@ -1963,7 +1963,6 @@ GameObject:
   - component: {fileID: 429417011}
   - component: {fileID: 429417015}
   - component: {fileID: 429417014}
-  - component: {fileID: 429417013}
   - component: {fileID: 429417012}
   m_Layer: 0
   m_Name: Manager
@@ -2003,41 +2002,6 @@ MonoBehaviour:
   cameraAcceleration: 0.5
   direction: {x: 0, y: 0, z: 0}
   timeTouch: 2.5
---- !u!114 &429417013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429417010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591b8e0d2ac8b4fa483926dad8951013, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mountPercent: 18
-  fencePercent: 5
-  width: 10
-  height: 10
-  tiles:
-  - {fileID: 11400000, guid: 971e9236372af417eba6dd5c26ab8eb2, type: 2}
-  - {fileID: 11400000, guid: 0fe074fbb9e7e4ef7a5ba8195f919a80, type: 2}
-  - {fileID: 11400000, guid: 30e7adc20e9eb4c98bb06284070ad508, type: 2}
-  - {fileID: 11400000, guid: a50176cda46ab4203bb246df549e5c6e, type: 2}
-  - {fileID: 11400000, guid: 626513d67822b4f04ab5881433bdec50, type: 2}
-  startPosition: {x: 0, y: 0}
-  mountCount:
-    minimum: 0
-    maximum: 0
-  fenceCount:
-    minimum: 0
-    maximum: 0
-  startArea: {x: 2, y: 2}
-  mapSelect: {fileID: 0}
-  buildingBeingPlaced: 0
-  objectBuilding: {fileID: 0}
-  button:
-  - {fileID: 6409167291709300731, guid: c2b8f3215490f48b6827663f6096e252, type: 3}
 --- !u!114 &429417014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3742,6 +3706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 655312547}
   - component: {fileID: 655312548}
+  - component: {fileID: 655312549}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -3781,6 +3746,41 @@ MonoBehaviour:
     minimum: 6
     maximum: 16
   isolateMax: 7
+--- !u!114 &655312549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655312546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591b8e0d2ac8b4fa483926dad8951013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mountPercent: 18
+  fencePercent: 5
+  width: 30
+  height: 30
+  tiles:
+  - {fileID: 11400000, guid: 971e9236372af417eba6dd5c26ab8eb2, type: 2}
+  - {fileID: 11400000, guid: 0fe074fbb9e7e4ef7a5ba8195f919a80, type: 2}
+  - {fileID: 11400000, guid: 30e7adc20e9eb4c98bb06284070ad508, type: 2}
+  - {fileID: 11400000, guid: a50176cda46ab4203bb246df549e5c6e, type: 2}
+  - {fileID: 11400000, guid: 626513d67822b4f04ab5881433bdec50, type: 2}
+  startPosition: {x: 0, y: 0}
+  mountCount:
+    minimum: 0
+    maximum: 0
+  fenceCount:
+    minimum: 0
+    maximum: 0
+  startArea: {x: 5, y: 5}
+  mapSelect: {fileID: 0}
+  buildingBeingPlaced: 0
+  objectBuilding: {fileID: 0}
+  button:
+  - {fileID: 6409167291709300731, guid: c2b8f3215490f48b6827663f6096e252, type: 3}
 --- !u!1 &683877514
 GameObject:
   m_ObjectHideFlags: 0
